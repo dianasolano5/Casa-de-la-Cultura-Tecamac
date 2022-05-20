@@ -1,0 +1,270 @@
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover{
+    text-decoration: underline; 
+   }
+
+ul{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 30px 50px;
+}
+
+body{
+    font-family:'Merriweather';
+}
+
+.contenedor{
+    padding: 8px 0px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+/* Header */
+   header{
+    width: 100%;
+    height: 450px;
+    background: #8e9eab; 
+     /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(192, 17%, 94%, 0.055), #8e9eabd0), url(../img/portada.jpg); 
+     /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f379, #8e9eab1e), url(../img/portada.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     background-size: cover;
+     background-attachment: fixed;
+     position: relative;
+   }
+
+   header .textos-header{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+   .textos-header h1{
+    font-size: 50px;
+    color: black;
+}
+
+   .textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+}
+
+   .wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+   /*Comentarios*/
+
+
+   :root{
+    --colorTextos:black;
+}
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Merriweather';
+    background: blue;
+background: #FF5F6D;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFC371, #FF5F6D); 
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 650px;
+display: block;
+justify-content: center;
+align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+form{
+    background: white;
+    padding: 40px 40px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+
+input{
+    background: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus{
+    outline: none;
+    color: black;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: blue;
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #FFC371, #FF5F6D);
+    transition: 0.3s ease with;
+    left: 0;
+}
+
+input:focus~.barra::before{
+ width: 100%;   
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: tomato;
+    padding-top: 20px;
+}
+
+button{
+    font-family:'Roboto';
+    background: #FF5F6D;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFC371, #FF5F6D); 
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border: none;
+display: block;
+width: 80%;
+margin: 10px auto;
+color: beige;
+height: 40px;
+font-size: 16px;
+cursor: pointer;
+}
+
+
+/*footer*/
+
+footer{
+    background: #414141;
+    padding: 60px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.conedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid grey;
+}
+
+.content-foo{
+    text-align: center;
+
+}
+
+.content-foo h4{
+    color: beige;
+    border-bottom: 3px solid #f20de7b2;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: beige;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 50px;
+    margin: 20px 0 0 0;
+    color: beige;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover{
+    text-decoration: underline; 
+   }
+
+ul{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 30px 50px;
+}
+
+body{
+    font-family:'Merriweather';
+}
+
+.contenedor{
+    padding: 8px 0px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+/* Header */
+   header{
+    width: 100%;
+    height: 450px;
+    background: #8e9eab; 
+     /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(192, 17%, 94%, 0.055), #8e9eabd0), url(../img/portada.jpg); 
+     /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f379, #8e9eab1e), url(../img/portada.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     background-size: cover;
+     background-attachment: fixed;
+     position: relative;
+   }
+
+   header .textos-header{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+   .textos-header h1{
+    font-size: 50px;
+    color: black;
+}
+
+   .textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+}
+
+   .wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* Footer */
+
+footer{
+    background: #414141;
+    padding: 60px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.conedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid grey;
+}
+
+.content-foo{
+    text-align: center;
+
+}
+
+.content-foo h4{
+    color: beige;
+    border-bottom: 3px solid #f20de7b2;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: beige;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 50px;
+    margin: 20px 0 0 0;
+    color: beige;
+}
+
+/*galeria*/
+
+.portafolio{
+    background: white;
+ }
+ 
+ .galeria-port{
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+ }
+ 
+ .imagen-port{
+    width: 30%;
+    margin-bottom: 10px;
+     height: 200px;
+     overflow: hidden;
+     position: relative;
+     cursor: pointer;
+     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+ }
+ .imager-port > img{
+    width: 100%;
+    height: 100%;
+     object-fit: cover;
+     display: block;
+ }
+
+ .hover-galeria{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+    transform: scale(0);
+     background: hsla(273,91%,27%,0.7);
+     transition: transform .5s;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .hover-galeria img{
+     width: 50px;
+ }
+
+ .hover-galeria p{
+     color: white;
+ }
+
+ .imagen-port:hover .hover-galeria{
+     transform: scale(1);
+ }
+
+ /*Eventos*/
+
+ .about-services{
+     background: white;
+    padding-bottom: 30px;
+ }
+
+ .servicio-cont{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .servicio-ind{
+     width: 28%;
+     text-align: justify;
+ }
+
+ .servicio-ind img{
+     width: 90%;
+ }
+
+ .servicio-ind h3{
+     margin: 10px 0;
+ }
